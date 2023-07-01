@@ -20,28 +20,32 @@ header {
 }
 header .title {
   color: #33FFFF;
-  font-size: 44px;
+  font-size: 60px;
   font-weight: 700;
   font-style: italic;
   text-align: center;
   display: block;
 }
 
-.product .container ul {
+.select {
+  background-color: rgba(185, 184, 184, 0.409);
+}
+.select .container ul {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
-.product .container .menu {
+.select .container .menu {
   display: flex;
 }
-.product .container .menu .nav-item {
+.select .container .menu .nav-item {
   margin-right: 70px;
   display: flex;
   align-items: center;
   font-size: 1.8rem;
   color: #FFFF66;
 }
-.product .container .icon {
+.select .container .icon {
   color: #CC99FF;
   margin-right: 10px;
 }

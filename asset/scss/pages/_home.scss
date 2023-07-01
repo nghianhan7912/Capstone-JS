@@ -21,13 +21,15 @@ header {
     }
 }
 
-.product {
+.select {
+    background-color: rgba(185, 184, 184, 0.409);
     .container {
 
         //Header
         ul {
             list-style: none;
             padding-left: 0;
+            margin-bottom: 0;
         }
 
         .menu {
