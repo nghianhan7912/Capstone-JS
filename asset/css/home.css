@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: url("/asset/img/lovepik-simple-technology-background-image_401596468.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .title {
+  color: #33FFFF;
+  font-size: 44px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  display: block;
+}
+
+.product .container ul {
+  list-style: none;
+  padding-left: 0;
+}
+.product .container .menu {
+  display: flex;
+}
+.product .container .menu .nav-item {
+  margin-right: 70px;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #FFFF66;
+}
+.product .container .icon {
+  color: #CC99FF;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: rgb(128, 128, 128);
+  color: white;
+  padding: 50px 0;
+}/*# sourceMappingURL=home.css.map */
