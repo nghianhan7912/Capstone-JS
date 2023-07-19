@@ -24,9 +24,9 @@
 
 <body>
     <header>
-        <div class="container">
+        <!-- <div class="container">
             <h1 class="title">CHÀO MỪNG ĐẾN VỚI IPAD GIÁ RẺ</h1>
-        </div>
+        </div> -->
     </header>
     <div class="select">
         <div class="container">
@@ -34,7 +34,7 @@
                 <ul class="menu">
                     <li class="nav-item">
                         <i class="fa-solid fa-house-chimney icon"></i>
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <i class="fa-solid fa-pen icon"></i>
@@ -42,39 +42,70 @@
                     </li>
                     <li class="nav-item dropdown">
                         <i class="fa-solid fa-tablet-screen-button icon"></i>
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Ipad
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Ipad Gen</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Ipad Mini</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Ipad Air</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Ipad Pro</a></li>
-                        </ul>
+                        <select class="nav-link" name="" id="select1">
+                            <option value="Ipad">Ipad</option>
+                            <option value="Ipad Mini">Ipad Mini</option>
+                            <option value="Ipad Air">Ipad Air</option>
+                            <option value="Ipad Gen">Ipad Gen</option>
+                            <option value="Ipad Pro">Ipad Pro</option>
+                        </select>
                     </li>
                 </ul>
+                <div class="cartList">
+                    <i class="fa-solid fa-basket-shopping icon1" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                    <span class="number">0</span>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Giỏ Hàng</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="row body">
+                            </div>
+                            <div class="row payMoney">
+                                <div class="col-6 pay__title">
+                                    Tổng tiền:
+                                </div>
+                                <div class="col-6 totalPrice"></div>
+                                <button class="pay">Thanh Toán</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
         </div>
     </div>
     <div class="product">
         <div class="container">
-            <div class="card-body">
-                <table class="table table-bordered table-hover myTable">
-                    <thead class="text-primary">
-                        <div></div>
-                    </thead>
-                    <tbody id="tableDanhSach">
-
-                    </tbody>
-                </table>
+            <div id="product__content" class="row">
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="hoverPrd">
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </div>
     <footer>
         <div class="container">
@@ -111,6 +142,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <!-- MY JS -->
+    <script src="./customer/model/SanPham.js"></script>
+    <script src="./customer/model/DSSP.js"></script>
+    <script src="./customer/model/ItemList.js"></script>
+    <script src="./customer/model/CartList.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./customer/controller/main.js"></script>
 </body>
 
 </html>
